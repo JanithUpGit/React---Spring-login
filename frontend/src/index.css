@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html,
+body {
+  margin: 0; /* Default margin අයින් කරනවා */
+  padding: 0; /* Default padding අයින් කරනවා */
+  height: 100%; /* HTML සහ Body වල height එක මුළු viewport එකටම සකස් කරනවා */
+}
+
+body {
+  display: flex; /* Flexbox container එකක් විදියට සලකනවා */
+  justify-content: center; /* Horizontal (තිරස් අතට) මැදට ගේනවා */
+  align-items: center; /* Vertical (සිරස් අතට) මැදට ගේනවා */
+  min-height: 100vh; /* Body එකේ අවම උස මුළු viewport height එකටම සමාන කරනවා */
+  /* ඔබට අවශ්‍ය අනෙකුත් body styles මෙතනට දාන්න */
+  background-color: #575151; /* උදාහරණයක් ලෙස පසුබිම් පාටක් */
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 1080px;
+  height: 650px;
+  background: #f8f8f8;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.signin-container {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-image {
+  align-self: flex-end;
+  width: 540px;
+  height: 650px;
+}
+
+.signin-container h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #030303;
+  margin: 0;
+}
+
+.signin-container h4 {
+  /* Welcome back! Please enter your details. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #636364;
+  margin: 0;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.input-section label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+
+  color: #181818;
+}
+
+.input-section input {
+  margin-top: 10px;
+  box-sizing: border-box;
+
+  width: 313.97px;
+  height: 41.31px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+  border-radius: 12px;
+
+  padding-left: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+}
+
+.input-section input::placeholder {
+  /* Enter your email */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  color: #636364;
+}
+.input-section input::target-text {
+  color: #636364;
+}
+
+.remember-forgot {
+  margin-top: 20px;
+  width: 313.97px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remember {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.remember input {
+  width: 14.46px;
+  height: 13.43px;
+  margin-left: 0;
+  border: 1px solid rgba(60, 60, 60, 0.25);
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.remember input:checked {
+  background-color: #1f2326; /* Tick කළාම නිල් පාට වෙන්න */
+  border-color: #7d8488;
+}
+
+.remember label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+
+  color: #181818;
+}
+
+.forgot {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+
+  color: #181818;
+  padding: 0;
+  margin: 0;
+}
+
+.signin-btn {
+  margin-top: 20px;
+  width: 313.97px;
+  height: 41.31px;
+  background: #ea454c;
+  border: none;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+  border-radius: 12px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.google-btn {
+  margin-top: 10px;
+  background-color: #FFFFFF;
+  width: 313.97px;
+  height: 41.31px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+  border-radius: 12px;
+  padding-left: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+
+  /* Sign in with Google */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #000000;
+
+
+}
