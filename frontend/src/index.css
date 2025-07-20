@@ -12,7 +12,7 @@ body {
   align-items: center; /* Vertical (සිරස් අතට) මැදට ගේනවා */
   min-height: 100vh; /* Body එකේ අවම උස මුළු viewport height එකටම සමාන කරනවා */
   /* ඔබට අවශ්‍ය අනෙකුත් body styles මෙතනට දාන්න */
-  background-color: #575151; /* උදාහරණයක් ලෙස පසුබිම් පාටක් */
+  background-color: #160d0d; /* උදාහරණයක් ලෙස පසුබිම් පාටක් */
 }
 
 .main-container {
@@ -37,7 +37,7 @@ body {
 .signin-image {
   align-self: flex-end;
   width: 540px;
-  height: 650px;
+  height: 648px;
 }
 
 .signin-container h2 {
@@ -184,7 +184,20 @@ body {
 
   color: #ffffff;
 }
+
+.signin-btn:hover {
+
+  background-color: #db3636;
+  color: #ffffff;
+}
+.signin-btn:active {
+  background-color: #c42b2b;
+  filter: drop_shadow(0px 2px 5px rgba(0, 0, 0, 0.1)); /* Shadow එක ටිකක් අඩු කරන්න */
+}
 .google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 10px;
   background-color: #FFFFFF;
   width: 313.97px;
@@ -192,16 +205,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.2);
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
   border-radius: 12px;
-  padding-left: 10px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.03em;
-
-  /* Sign in with Google */
-
+  
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
@@ -213,4 +217,19 @@ letter-spacing: 0.03em;
 color: #000000;
 
 
+}
+.google-btn:hover {
+
+  background-color: #dbdbdb;
+}
+.google-btn:active {
+
+  background-color: #959292;
+  color: #ffffff;
+}
+
+.google-btn img{
+  width: 25px;
+  padding-right: 10px;
+  padding-bottom: 2px;
 }
